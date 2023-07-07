@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="#3276A7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textHello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Hello,"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textAyush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Ayush"
+                android:textSize="33sp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/searchbar"
+                android:layout_width="350dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="40dp"
+                app:cardCornerRadius="28dp">
+
+                <ImageView
+                    android:id="@+id/searchIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/ic_search" />
+
+                <EditText
+                    android:id="@+id/searchText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp"
+                    android:layout_marginLeft="60dp"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:background="@android:color/transparent"
+                    android:hint="Explore"
+                    android:textSize="20dp" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/profilepicture"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="30dp">
+
+            <ImageView
+                android:id="@+id/profileLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/browswText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Browse By"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/browswText"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/latestText"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Latest"
+                android:textAllCaps="false"
+                app:backgroundTint="#DDD"
+                app:cornerRadius="20dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/olderText"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Older"
+                android:textAllCaps="false"
+                app:backgroundTint="#DDD"
+                app:cornerRadius="20dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearlayout2"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

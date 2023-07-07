@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/skipIntroButton2"
+        app:cornerRadius="18dp"
+        android:text="Skip intro"
+        android:textAllCaps="false"
+        android:textColor="#3A7EB0"
+        app:strokeWidth="1dp"
+        app:strokeColor="#3A7EB0"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/white" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ScreenTwoImage"
+        android:src="@drawable/pana"
+        android:layout_below="@id/skipIntroButton2"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="70dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:id="@+id/ScreenOneCardView"
+        android:backgroundTint="#3A7EB0"
+        app:cardCornerRadius="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/ScreenTwoImage"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginVertical="20dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview3"
+            android:text="Our Mission"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="28dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview4"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            android:layout_marginTop="80dp"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="30dp" />
+
+        <ProgressBar
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/progressbar2"
+            android:indeterminateOnly="false"
+            android:progressDrawable="@drawable/progress_bar"
+            android:progress="60"
+            android:layout_marginHorizontal="90dp"
+            android:layout_marginTop="180dp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            android:src="@drawable/circle"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="222dp"
+            android:background="#3A7EB0"
+            android:layout_marginLeft="133dp"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

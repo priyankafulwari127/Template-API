@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview7"
+        android:text="Upload Image"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="90dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/arrow"
+        android:src="@drawable/_icon__arrow_left_"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"/>
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="160dp"
+        android:id="@+id/profile"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zootopia"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="140dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:id="@+id/selectImage"
+        android:text="Select Image"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/profile"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="40dp"
+        app:cornerRadius="5dp"
+        android:backgroundTint="#3A7EB0" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="340dp"
+        android:layout_height="80dp"
+        android:id="@+id/uploadImage"
+        android:text="Upload Image"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/selectImage"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="40dp"
+        app:cornerRadius="5dp"
+        android:backgroundTint="#3A7EB0" />
+
+
+
+
+</RelativeLayout>
